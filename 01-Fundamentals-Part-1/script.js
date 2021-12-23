@@ -1,4 +1,4 @@
-
+/*
 ////////////////////////////////////
 // Linking a JavaScript File
 let js = "amazing";
@@ -80,7 +80,7 @@ console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 
 const firstName = 'Jonas';
 const lastName = 'Schmedtmann';
-console.log(firstName + ' '  + lastName);
+console.log(firstName + ' ' + lastName);
 
 // Assignment operators
 let x = 10 + 5; // 15
@@ -113,7 +113,7 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
-
+*/
 
 ////////////////////////////////////
 // Coding Challenge #1
@@ -136,7 +136,7 @@ GOOD LUCK 😀
 // const massJohn = 92;
 // const heightJohn = 1.95;
 
-
+/*
 const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
@@ -192,7 +192,7 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-
+*/
 
 ////////////////////////////////////
 // Coding Challenge #2
@@ -208,7 +208,7 @@ HINT: Use an if/else statement 😉
 GOOD LUCK 😀
 */
 
-
+/*
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
@@ -243,11 +243,11 @@ console.log(typeof NaN);
 console.log(String(23), 23);
 
 // type coercion
-console.log('I am ' + 23 + ' years old')
+console.log('I am ' + 23 + ' years old');
 console.log('23' - '10' - 3);
-console.log('23' * '2');
+console.log('23' / '2');
 
-let n = '1' + 1;
+let n = '1' + 1; // '11'
 n = n - 1;
 console.log(n);
 
@@ -321,7 +321,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log('Someone else should drive...');
 }
-
+*/
 
 ////////////////////////////////////
 // Coding Challenge #3
@@ -342,7 +342,7 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 GOOD LUCK 😀
 */
 
-
+/*
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKoalas = (88 + 91 + 110) / 3;
 // console.log(scoreDolphins, scoreKoalas);
@@ -442,7 +442,7 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
-
+*/
 
 ////////////////////////////////////
 // Coding Challenge #4
@@ -461,7 +461,8 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 GOOD LUCK 😀
 */
 
-
+/*
 const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+*/
