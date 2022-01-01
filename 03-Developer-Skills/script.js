@@ -1,7 +1,7 @@
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict';
 
-
+/*
 ///////////////////////////////////////
 // Using Google, StackOverflow and MDN
 
@@ -13,7 +13,7 @@ const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 // 1) Understanding the problem
 // - What is temp amplitude? Answer: difference between highest and lowest temp
 // - How to compute max and min temperatures?
-// - What's a sensor error? And what to do?
+// - What's a sensor error? And what do do?
 
 // 2) Breaking up into sub-problems
 // - How to ignore errors?
@@ -114,7 +114,7 @@ const calcTempAmplitudeBug = function (t1, t2) {
 const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 // A) IDENTIFY
 console.log(amplitudeBug);
-
+*/
 
 ///////////////////////////////////////
 // Coding Challenge #1
@@ -132,11 +132,11 @@ TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
 */
 
-
-
+/*
 // 1) Understanding the problem
 // - Array transformed to string, separated by ...
 // - What is the X days? Answer: index + 1
+
 // 2) Breaking up into sub-problems
 // - Transform array into string
 // - Transform each element to string with ºC
@@ -157,3 +157,4 @@ const printForecast = function (arr) {
   console.log('...' + str);
 };
 printForecast(data1);
+*/
