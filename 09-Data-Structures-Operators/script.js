@@ -53,6 +53,42 @@ const restaurant = {
 };
 
 ///////////////////////////////////////
+// Maps: Iteration
+const question = new Map([
+  ['question', 'What is the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct 🎉'],
+  [false, 'Try again!'],
+]);
+console.log(question);
+
+// Convert object to map
+console.log(Object.entries(openingHours));
+const hoursMap = new Map(Object.entries(openingHours));
+console.log(hoursMap);
+
+// Quiz app
+console.log(question.get('question'));
+for (const [key, value] of question) {
+  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+}
+// const answer = Number(prompt('Your answer'));
+const answer = 3;
+console.log(answer);
+
+console.log(question.get(question.get('correct') === answer));
+
+// Convert map to array
+console.log([...question]);
+// console.log(question.entries());
+console.log([...question.keys()]);
+console.log([...question.values()]);
+
+/*
+///////////////////////////////////////
 // Maps: Fundamentals
 const rest = new Map();
 rest.set('name', 'Classico Italiano');
@@ -121,7 +157,7 @@ console.log(
 );
 
 console.log(new Set('jonasschmedtmann').size);
-
+*/
 
 ///////////////////////////////////////
 // Coding Challenge #2
@@ -188,7 +224,7 @@ const game = {
   },
 };
 
-
+/*
 // 1.
 for (const [i, player] of game.scored.entries())
   console.log(`Goal ${i + 1}: ${player}`);
@@ -216,9 +252,9 @@ const scorers = {};
 for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
+*/
 
-
-
+/*
 ///////////////////////////////////////
 // Looping Objects: Object Keys, Values, and Entries
 
@@ -290,7 +326,7 @@ for (const [i, el] of menu.entries()) {
 }
 
 // console.log([...menu.entries()]);
-
+*/
 
 ///////////////////////////////////////
 // Coding Challenge #1
@@ -313,7 +349,7 @@ TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Th
 GOOD LUCK 😀
 */
 
-
+/*
 // 1.
 const [players1, players2] = game.players;
 console.log(players1, players2);
@@ -594,3 +630,4 @@ console.log(i, j, k);
 // Default values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
+*/
