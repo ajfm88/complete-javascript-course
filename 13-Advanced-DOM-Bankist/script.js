@@ -318,7 +318,7 @@ const message = document.createElement('div');
 message.classList.add('cookie-message');
 // message.textContent = 'We use cookied for improved functionality and analytics.';
 message.innerHTML =
-  'We use cookies for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
+  'We use cookied for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
 
 // header.prepend(message);
 header.append(message);
@@ -335,7 +335,7 @@ document
     message.parentElement.removeChild(message);
   });
 
-
+  
 ///////////////////////////////////////
 // Styles, Attributes and Classes
   
@@ -486,10 +486,10 @@ const obsOptions = {
   root: null,
   threshold: [0, 0.2],
 };
- 
+
 const observer = new IntersectionObserver(obsCallback, obsOptions);
 observer.observe(section1);
-*/
+
 
 ///////////////////////////////////////
 // Lifecycle DOM Events
@@ -506,3 +506,4 @@ window.addEventListener('beforeunload', function (e) {
   console.log(e);
   e.returnValue = '';
 });
+*/
