@@ -1,4 +1,6 @@
-# Live Demos:
+# The Complete JavaScript Course 2022: From Zero to Expert!
+
+## Live Demos:
 
 - [Pig Game](https://pig-game-v2.netlify.app) (DOM Manipulation)
 - [Bankist](https://bankist.netlify.app/) (Arrays, Numbers, Dates, Timers. Fake "log in" with user `js` and PIN `1111`)
