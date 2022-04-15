@@ -1,3 +1,6 @@
+import { async } from 'regenerator-runtime';
+import { TIMEOUT_SEC } from './config.js';
+
 export const getJSON = async function (url) {
   try {
     const fetchPro = fetch(url);
