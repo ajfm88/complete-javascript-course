@@ -1,59 +1,28 @@
+import View from './View.js';
+
+// import icons from '../img/icons.svg'; // Parcel 1
 import icons from 'url:../../img/icons.svg'; // Parcel 2
 
-class RecipeView {
+/* NOTE: The Fractional package has been reported to cause an error when deployed to a server. I suggest you to use Fracty instead. */
+// import { Fraction } from 'fractional';
+import fracty from "fracty";
+
+class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
   _errorMessage = 'We could not find that recipe. Please try another one!';
   _message = '';
 
-  _clear() {
-    this._parentElement.innerHTML = '';
-  }
-
-  renderSpinner = function() {
-    const markup = `
-    <div class="spinner">
-      <svg>
-        <use href="${icons}#icon-loader"></use>
-      </svg>
-    </div>
-    `
-    this.#clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
-  }
-
-  renderError(message = this._message) {
-    const markup = `
-    <div class="message">
-      <div>
-        <svg>
-          use href="src/img/icons.svg#icon-smile"></use>
-        </svg>
-      </div>
-      <p>${message}</p>
-    </div>
-    `
-    this.#clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
-  }
-
-  renderMessage(message = this._errorMessage) {
-    const markup = `
-    <div class="error">
-      <div>
-        <svg>
-          <use href="${icons}#icon-alert-triangle"></use>
-        </svg>
-      </div>
-      <p>${message}</p>
-    </div>
-    `
-    this.#clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
-  }
-
-
   addHandlerRender(handler) {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
+  }
+
+  addHandlerUpdateServings(handler) {
+    this._parentElement.addEventListener('click', function (e) {
+      const btn = e.target.closest('.btn--update-servings');
+      if (!btn) return;
+      const { updateTo } = btn.dataset;
+      if (+updateTo > 0) handler(+updateTo);
+    });
   }
 
   addHandlerAddBookmark(handler) {
